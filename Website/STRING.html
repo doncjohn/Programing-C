@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>C - A LITTLE THING</title>
+	<link rel="stylesheet" href="css/main.css"> 
+	<link href='https://fonts.googleapis.com/css?family=Happy Monkey' rel='stylesheet'>
+	<style>
+	body {
+		font-family: 'Happy Monkey';font-size: 22px;
+	}
+	</style>
+</head>
+<body>
+
+
+<div id="topheader">
+
+<div id="topleft">
+<center><img src="images/logo.png"></center>
+</div>
+
+<div id="topright">
+<center>C - A LITTLE BIG THING TUTORIAL BY CSA 2K16 BATCH &emsp;&emsp;
+<a href="E:/TECHY/DESKTOP/C TUTORIAL/index.html"><button>Click to go home</button></a>
+</center>
+</div>
+
+</div>
+
+<div class="wrap">
+<main>
+<aside>
+<div id="leftmenu">  	
+	<ul>
+			<li class="main"><a href="#" >MODULE-1</a></li>
+		<ul>
+					<li ><a href="PREPROCESSOR DIRECTIVES.html">PREPROCESSOR DIRECTIVES</a></li>
+					<li><a href="HEADER FILES.html">HEADER FILES</a></li>
+					<li><a href="DATA TYPES.html">DATA TYPES</a></li>
+					<li><a href="QUALIFIERS.html">QUALIFIERS</a></li>
+					<li><a href="OPERATORS.html">OPERATORS</a></li>
+					<li><a href="EXPRESSIONS.html">EXPRESSIONS</a></li>
+					<li><a href="PRECEDENCE AND ASSOCIATIVITY.html">PRECEDENCE AND ASSOCIATIVITY</a></li>
+					<li><a href="DATA INPUT AND OUTPUT.html">DATA INPUT AND OUTPUT</a></li>
+					<li><a href="CONTROL STATEMENT.html">CONTROL STATEMENT</a></li>
+					
+		</ul>
+		
+			<li class="main"><a href="#" >MODULE-2</a></li>
+			
+		<ul>
+			
+			<li><a href="ARRAY.html">ARRAY</a></li>
+			<li class="active"><a href="STRING.html">STRING</a></li>
+			<li><a href="2-DIMENSIONAL ARRAY AND OPERATIONS.html">2-DIMENSIONAL ARRAY AND OPERATIONS</a></li>
+			<li><a href="STRUCTURE.html">STRUCTURE</a></li>
+			<li><a href="UNION.html">UNION</a></li>
+			<li><a href="ENUMERATED DATATYPE.html">ENUMERATED DATATYPE</a></li>
+			
+		</ul>
+			
+			<li class="main"><a href="#" >MODULE-3</a></li>
+			
+		<ul>
+			<li><a href="ARRAY OF POINTERS.html">ARRAY OF POINTERS</a></li>
+			<li><a href="STRUCTURE AND POINTERS.html">STRUCTURE AND POINTERS</a></li>
+		</ul>
+		
+			<li class="main"><a href="#" >MODULE-4</a></li>
+			
+		<ul>
+			<li><a href="FUNCTION DEFINITION AND PROTOTYPING.html">FUNCTION DEFINITION AND PROTOTYPING</a></li>
+			<li><a href="FUNCTION CALL BY VALUE.html">FUNCTION CALL BY VALUE</a></li>
+			<li><a href="FUNCTION CALL BY REFERENECE.html">FUNCTION CALL BY REFERENECE</a></li>
+			<li><a href="POINTER TO A FUNCTION.html">POINTER TO A FUNCTION</a></li>
+			<li><a href="RECURSIVE FUNCTION.html">RECURSIVE FUNCTION</a></li>
+		</ul>
+			
+			<li class="main"><a href="#" >MODULE-5</a></li>
+			
+		<ul>
+			<li><a href="BUBBLE SORT.html">BUBBLE SORT</a></li>
+			<li><a href="SELECTION SORT.html">SELECTION SORT</a></li>
+			<li><a href="LINEAR SEARCH.html">LINEAR SEARCH</a></li>
+			<li><a href="BINARY SEARCH.html">BINARY SEARCH</a></li>
+			<li><a href="SCOPE RULES.html">SCOPE RULES</a></li>
+			<li><a href="STORAGE CLASSES.html">STORAGE CLASSES</a></li>
+			<li><a href="MEMORY ALLOCATION.html">MEMORY ALLOCATION</a></li>
+			<li><a href="BIT-WISE OPERATIONS.html">BIT-WISE OPERATIONS</a></li>
+		</ul>
+		
+			<li class="main"><a href="#" >MODULE-6</a></li>
+			
+		<ul>
+			<li><a href="FORMATTED TEXT FILE OPERATIONS.html">FORMATTED TEXT FILE OPERATIONS</a></li>
+			<li><a href="UNFORMATTED TEXT FILE OPERATIONS.html">UNFORMATTED TEXT FILE OPERATIONS</a></li>
+			<li><a href="COMMAND LINE ARGUMENTS.html">COMMAND LINE ARGUMENTS</a></li>
+		</ul>
+		
+	</ul>
+</div>
+</aside>
+
+<article>
+<div id="container">
+
+<div id="wrapper">
+<p>
+<pre>
+<h3>STRING</h3>
+For string we use character array it is ended with '\0'
+<h3>CHARACTER ARRAY INTIALISATION & DECLARATION</h3>
+We can intailise in two ways are explained below:
+<textarea rows="2" cols="125">
+Char <name> [<size>] = “<string>”;
+Char <name> [<size>] ={‘<character1>’,‘<character2>’,‘<character3>’,…..,’\0’};
+</textarea>
+Example
+<textarea rows="2" cols="70">
+char name [4]="life";
+char name[4]={ 'l','i','f','e','\0'}
+</textarea>
+<h3>STRING HEADERFILE AND FUNCTIONS</h3>
+ <table border="1">
+  <tr>
+    <th>String function</th>
+	<td>Description</td>
+	<tr>
+	<th>strcat( )</th>
+	<td>Concatenates str2 at the end of str1</td>
+	</tr>
+	<tr>
+	<th>strncat( )</th>
+	<td>Appends a portion of string to another</td>
+	</tr>
+	<tr>
+	<th>strcpy( )</th>
+	<td>Copies str2 into str1</td>
+	</tr>
+	<tr>
+	<th>strncpy( )</th>
+	<td>Copies given number of characters of one string to another</td>
+	</tr>
+	<tr>
+	<th>strlen( )</th>
+	<td>Gives the length of str1</td>
+	</tr>
+	<tr>
+	<th>strcmp( )</th>
+	<td>Returns 0 if str1 is same as str2.<br> Returns <0 if strl < str2. Returns >0 if str1 > str2</td>
+	</tr>
+	<tr>
+	<th>strstr( )</th>
+	<td>Returns pointer to first occurrence of str2 in str1</td>
+	</tr>
+	<tr>
+	<th>strrstr( )</th>
+	<td>Returns pointer to last occurrence of str2 in str1</td>
+	</tr>
+	<tr>
+	<th>strrev( )</th>
+    <td>Reverses the given string</td>
+  </tr>
+
+</table> <br>
+
+
+
+</pre>
+</p>
+</div>
+
+<hr>
+<div id="left">
+<a href="ARRAY.html"><button>Prev</button></a>
+</div>
+<div id="right">
+<a href="2-DIMENSIONAL ARRAY AND OPERATIONS.html"><button>Next</button></a>
+</div>
+
+
+
+</div>
+</article>
+
+</main>
+</div>
+
+<footer>
+<h5><center>&copy;Copyright-CSA 2K16 Batch; All Rights Reserved</center></h5>
+</footer>
+
+</body>
+</html>

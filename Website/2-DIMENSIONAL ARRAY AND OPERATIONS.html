@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>C - A LITTLE THING</title>
+	<link rel="stylesheet" href="css/main.css"> 
+	<link href='https://fonts.googleapis.com/css?family=Happy Monkey' rel='stylesheet'>
+	<style>
+	body {
+		font-family: 'Happy Monkey';font-size: 22px;
+	}
+	</style>
+</head>
+<body>
+
+
+<div id="topheader">
+
+<div id="topleft">
+<center><img src="images/logo.png"></center>
+</div>
+
+<div id="topright">
+<center>C - A LITTLE BIG THING TUTORIAL BY CSA 2K16 BATCH &emsp;&emsp;
+<a href="E:/TECHY/DESKTOP/C TUTORIAL/index.html"><button>Click to go home</button></a>
+</center>
+</div>
+
+</div>
+
+<div class="wrap">
+<main>
+<aside>
+<div id="leftmenu">  	
+	<ul>
+			<li class="main"><a href="#" >MODULE-1</a></li>
+		<ul>
+					<li><a href="PREPROCESSOR DIRECTIVES.html">PREPROCESSOR DIRECTIVES</a></li>
+					<li><a href="HEADER FILES.html">HEADER FILES</a></li>
+					<li><a href="DATA TYPES.html">DATA TYPES</a></li>
+					<li><a href="QUALIFIERS.html">QUALIFIERS</a></li>
+					<li><a href="OPERATORS.html">OPERATORS</a></li>
+					<li><a href="EXPRESSIONS.html">EXPRESSIONS</a></li>
+					<li><a href="PRECEDENCE AND ASSOCIATIVITY.html">PRECEDENCE AND ASSOCIATIVITY</a></li>
+					<li><a href="DATA INPUT AND OUTPUT.html">DATA INPUT AND OUTPUT</a></li>
+					<li><a href="CONTROL STATEMENT.html">CONTROL STATEMENT</a></li>
+					
+		</ul>
+		
+			<li class="main"><a href="#" >MODULE-2</a></li>
+			
+		<ul>
+			
+			<li><a href="ARRAY.html">ARRAY</a></li>
+			<li><a href="STRING.html">STRING</a></li>
+			<li class="active"><a href="2-DIMENSIONAL ARRAY AND OPERATIONS.html">2-DIMENSIONAL ARRAY AND OPERATIONS</a></li>
+			<li><a href="STRUCTURE.html">STRUCTURE</a></li>
+			<li><a href="UNION.html">UNION</a></li>
+			<li><a href="ENUMERATED DATATYPE.html">ENUMERATED DATATYPE</a></li>
+			
+		</ul>
+			
+			<li class="main"><a href="#" >MODULE-3</a></li>
+			
+		<ul>
+			<li><a href="ARRAY OF POINTERS.html">ARRAY OF POINTERS</a></li>
+			<li><a href="STRUCTURE AND POINTERS.html">STRUCTURE AND POINTERS</a></li>
+		</ul>
+		
+			<li class="main"><a href="#" >MODULE-4</a></li>
+			
+		<ul>
+			<li><a href="FUNCTION DEFINITION AND PROTOTYPING.html">FUNCTION DEFINITION AND PROTOTYPING</a></li>
+			<li><a href="FUNCTION CALL BY VALUE.html">FUNCTION CALL BY VALUE</a></li>
+			<li><a href="FUNCTION CALL BY REFERENECE.html">FUNCTION CALL BY REFERENECE</a></li>
+			<li><a href="POINTER TO A FUNCTION.html">POINTER TO A FUNCTION</a></li>
+			<li><a href="RECURSIVE FUNCTION.html">RECURSIVE FUNCTION</a></li>
+		</ul>
+			
+			<li class="main"><a href="#" >MODULE-5</a></li>
+			
+		<ul>
+			<li><a href="BUBBLE SORT.html">BUBBLE SORT</a></li>
+			<li><a href="SELECTION SORT.html">SELECTION SORT</a></li>
+			<li><a href="LINEAR SEARCH.html">LINEAR SEARCH</a></li>
+			<li><a href="BINARY SEARCH.html">BINARY SEARCH</a></li>
+			<li><a href="SCOPE RULES.html">SCOPE RULES</a></li>
+			<li><a href="STORAGE CLASSES.html">STORAGE CLASSES</a></li>
+			<li><a href="MEMORY ALLOCATION.html">MEMORY ALLOCATION</a></li>
+			<li><a href="BIT-WISE OPERATIONS.html">BIT-WISE OPERATIONS</a></li>
+		</ul>
+		
+			<li class="main"><a href="#" >MODULE-6</a></li>
+			
+		<ul>
+			<li><a href="FORMATTED TEXT FILE OPERATIONS.html">FORMATTED TEXT FILE OPERATIONS</a></li>
+			<li><a href="UNFORMATTED TEXT FILE OPERATIONS.html">UNFORMATTED TEXT FILE OPERATIONS</a></li>
+			<li><a href="COMMAND LINE ARGUMENTS.html">COMMAND LINE ARGUMENTS</a></li>
+		</ul>
+		
+	</ul>
+</div>
+</aside>
+
+<article>
+<div id="container">
+
+<div id="wrapper">
+<p>
+<pre>
+<h3>MULTI DIMENSIONAL ARRAY</h3>
+In c we can create array with multiple dimensional means array of arrays.
+<textarea rows="1" cols="70">
+<Datatype><name>[size1][size2]...[sizeN];
+</textarea>
+<h3>2-DIMENSIONAL ARRAY AND OPERATIONS</h3>
+Two dimensional array are array of another array
+<h3>DECLARATION OF 2 DIMENSIONAL ARRAY</h3>
+<textarea rows="1" cols="70">
+<Datatype><name>[size1][size2];
+</textarea>
+ 
+<table border ="1">
+<tr>
+<th>column 0</th>
+<th>column 1</th>
+<th>column 3</th>
+</tr>
+<tr>
+<th>A[0][0]</th>
+<th>A[0][1]</th>
+<th>A[0][2]</th>
+</tr>
+<tr>
+<th>A[1][0]</th>
+<th>A[1][1]</th>
+<th>A[1][1]</th>
+</tr>
+</table>
+<h3>DECLARING & INITIALISING 2 DIMENSIONAL ARRAY</h3>
+<textarea rows="15" cols="100">
+<Datatype><name>[size1][size2] = { A[0][0],A[0][1],A[0][2],A[1][0],A[1][1],A[1][2]};
+<Datatype><name>[size1][size2] = {
+                                    { A[0][0],A[0][1],A[0][2]},
+		                            {A[1][0],A[1][1],A[1][2]}
+		                         };
+Example
+Int a[3,3]={0,1,2,3,4,5,6,7,8,9}
+Int a[3,3]={
+            {0,1,2},{3,4,5},{6,7,8}
+           };
+		   </textarea>
+<h3>ACESSING ELEMENT OF ARRAY</h3>
+For every element can be initialise by considering the rows as “I” and column as “j”.
+ Generally, an element is founded as in format a[i][j] .
+<h3><u>MATRIX ADDITION AND SUBSTRACTION</u></h3>
+<h3>Array Addition </h3>
+<textarea rows="70" cols="100">
+#include<stdio.h>
+void main()
+{
+int n,m,i,j;
+printf(“enter the number of rows and columns\t”);
+scanf(“%d%d”,&n,&m);
+int  a[n][m],b[n][m],c[n][m];
+printf (“enter  the elements of first matrix”);
+for(i=0;i<n;i++)
+{
+	for(j=0;j<m;j++)
+	{
+	scanf(“%d”,&a[i][j]);
+	}
+}
+//printing first array
+for(i=0;i<n;i++)
+{
+	for(j=0;j<m;j++)
+	{
+	printf(“%d\t”,a[i][j]);
+	}
+printf(“\n”);
+
+}
+printf(“enter the second array elements”);
+for(i=0;i<n;i++)
+{
+	for(j=0;j<m;j++)
+	{
+	scanf(“%d”,&b[i][j]);
+	}
+}
+//printing second array
+for(i=0;i<n;i++)
+{
+	for(j=0;j<m;j++)
+	{
+	printf(“%d\t”,b[i][j]);
+	}
+printf(“\n”);
+
+}
+//addition
+for(i=0;i<n;i++)
+{
+	for(j=0;j<m;j++)
+	{
+	c[i][j]=a[i][j]+b[i][j];
+	}
+}
+//printing resultant array
+for(i=0;i<n;i++)
+{
+	for(j=0;j<m;j++)
+	{
+	printf(“%d\t”,c[i][j]);
+	}
+printf(“\n”);
+
+}
+}
+</textarea>
+<h3>Array Substaction</h3>
+<textarea rows="70" cols="100">
+#include<stdio.h>
+void main()
+{
+int n,m,i,j;
+printf(“enter the number of rows and columns\t”);
+scanf(“%d%d”,&n,&m);
+int  a[n][m],b[n][m],c[n][m];
+printf (“enter  the elements of first matrix”);
+for(i=0;i<n;i++)
+{
+	for(j=0;j<m;j++)
+	{
+	scanf(“%d”,&a[i][j]);
+	}
+}
+//printing first array
+for(i=0;i<n;i++)
+{
+	for(j=0;j<m;j++)
+	{
+	printf(“%d\t”,a[i][j]);
+	}
+printf(“\n”);
+
+}
+printf(“enter the second array elements”);
+for(i=0;i<n;i++)
+{
+	for(j=0;j<m;j++)
+	{
+	scanf(“%d”,&b[i][j]);
+	}
+}
+//printing second array
+for(i=0;i<n;i++)
+{
+	for(j=0;j<m;j++)
+	{
+	printf(“%d\t”,b[i][j]);
+	}
+printf(“\n”);
+
+}
+//substraction
+for(i=0;i<n;i++)
+{
+	for(j=0;j<m;j++)
+	{
+	c[i][j]=a[i][j]-b[i][j];
+	}
+}
+//printing resultant array
+for(i=0;i<n;i++)
+io{
+	for(j=0;j<m;j++)
+	{
+	printf(“%d\t”,c[i][j]);
+	}
+printf(“\n”);
+
+}
+}
+
+</textarea>
+<h3>MATRIX MULTIPLICATION</h3>
+<textarea rows="80" cols="100">
+#include<stdio.h>
+void main()
+{
+int n,m,p,q;
+for(“enter the number of rows and columns of 1st array”\n);
+scanf(“%d%d”,&n,&m);
+for(“enter the number of rows and columns of 2nd array”\n);
+scanf(“%d%d”,&n,&m);
+if (n!=p)
+{
+printf(“these matrixes can’t be multiplied”);
+exit(0);
+}
+else
+{
+int a[n][m],b[p][q],c[m][q]
+printf(“enter the elements of the first array”);
+for(i=0;i<n;i++)
+{
+	for(j=0;j<m;j++)
+	{
+scanf(“%d”,&a[i][j]);
+}
+}
+//printing the first array 
+for(i=0;i<n;i++)
+{
+	for(j=0;j<m;j++)
+	{
+printf(“%d\t”,&a[i][j]);
+}
+printf(“\n”);
+
+}
+printf(“enter the elements of the second array”);
+for(i=0;i<p;i++)
+{
+	for(j=0;j<q;j++)
+	{
+scanf(“%d”,&b[i][j]);
+}
+}
+//printing the second array 
+for(i=0;i<p;i++)
+{
+	for(j=0;j<q;j++)
+	{
+printf(“%d\t”,&b[i][j]);
+}printf(“\n”);
+
+}
+//metrix multiplication
+for(i=o;i<m;j++)
+{
+	for(j=0;j<q;j++)
+	{
+	c[i][j]=0;
+		for(k=0;k<m;k++)
+		{
+		c[i][j]=c[i][j]+(a[i][k]*b[k][j]);
+		}
+	}
+}
+//printing the multiplied array 
+for(i=0;i<m;i++)
+{
+	for(j=0;j<q;j++)
+	{
+printf(“%d\t”,&c[i][j]);
+}
+printf(“\n”);
+}
+}
+
+</textarea>
+<h3>TRANSPOSE OF MATRIX</h3>
+<textarea rows="50" cols="100">
+#include<stdio.h>
+void main()
+{
+int n,m;
+printf(“enter the number of rows and columns\n”);
+scanf(“%d%d”,&n,&m);
+printf(“enter the elements of the array\n”);
+int a[n][m];
+for(i=0;i<n;i++)
+{
+	for(j=0;j<m;j++)
+	{
+	scanf(“%d”,&a[i][j]);
+	}
+}
+
+//printing the array
+for(i=0;i<n;i++)
+{
+	for(j=0;j<m;j++)
+	{
+	printf(“%d\t”,&a[i][j]);
+	}
+printf(“\n”);
+
+}
+//transposing array
+for(i=0;i<n;i++)
+{
+	for(j=0;j<m;j++)
+	{
+	b[i][j]=a[j][i];
+	}
+}
+//printing transpose array
+for(i=0;i<n;i++)
+{
+	for(j=0;j<m;j++)
+	{
+	printf(“%d\t”,&b[i][j]);
+	}
+printf(“\n”);
+
+}
+}
+</textarea>
+</pre>
+</p>
+</div>
+
+<hr>
+<div id="left">
+<a href="STRING.html"><button>Prev</button></a>
+</div>
+<div id="right">
+<a href="STRUCTURE.html"><button>Next</button></a>
+</div>
+
+
+
+</div>
+</article>
+
+</main>
+</div>
+
+<footer>
+<h5><center>&copy;Copyright-CSA 2K16 Batch; All Rights Reserved</center></h5>
+</footer>
+
+</body>
+</html>
