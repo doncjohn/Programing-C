@@ -1,0 +1,159 @@
+* {
+	padding:0px;
+	margin:0px;
+}
+html,body{
+	background:#ffffff;
+	height:100%;
+}
+
+.wrap {
+  height: 100vh;
+  display: flex;
+}
+
+main {
+  flex: 1;
+  display: flex;
+}
+ 
+aside, article {
+  overflow-y: scroll;
+  padding: 0.2em;
+}
+ 
+aside {
+  flex: 1;
+}
+ 
+article {
+  flex: 4;
+}
+
+@media (max-width: 500px) {
+    main {
+      flex-direction: column;
+    }
+	aside {
+	  flex: 1;
+	}
+	 
+	article {
+	  flex: 2;
+	}
+}
+
+#topheader {
+	display:flex;
+	font-weight:400;
+	font-size:30px;
+	height:auto;
+	width:100%;
+	background:#fd0067;
+	line-height:70px;
+	color:white;
+	border-bottom:1px solid silver;
+}
+
+#topleft {
+	flex: 1;
+}
+
+#topright {
+	flex: 6;
+}
+
+img {
+	width:50%;
+	height:50%;
+}
+button{
+  display: inline-block;
+  padding: 0px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #737573;
+  border: none;
+  border-radius: 19px;
+  box-shadow: 0 4px #999;
+}
+button:hover{
+	background-color: gold;
+	color:black;
+}
+button:active{
+	background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+#leftmenu {
+	background:white;
+	float:left;
+}
+#leftmenu a{
+	text-decoration:none;
+	color:indigo;
+	padding-right:0px;
+	font-size:14px;
+}
+#leftmenu ul li {
+	list-style-type:none;
+	display:block;
+	padding:10px;
+	border-bottom:0.5px solid black;
+	border-radius: 10px;
+}
+#leftmenu ul li:hover{
+	background:gold;
+	color:black;
+	transition:linear all 0.4s;
+	margin-left:10px;
+}
+#leftmenu ul li:hover a {
+	color:black;
+}
+.main {
+	background:silver;
+}
+.main a {
+		color:black;
+		font-style:bold;
+}
+
+.active {
+	background:gold;
+}
+
+#wrapper {
+	margin:1% 1% 1% 1%;
+}
+
+#left {
+	padding:3% 0% 3% 3%;
+	float:left;
+}
+#right {
+	padding:3% 3% 3% 0%;
+	float:right;
+}
+footer {
+	background:#bd3459;
+}
+
+table, th, td {
+		border: 4px solid darkslategray;
+		background:beige;
+		border-collapse: collapse;
+		margin:5% 5% 5% 5%;
+	    text-align:left; 
+		padding:15px;
+		}
+
+textarea {
+	font-size:20px;
+	background:;
+}
